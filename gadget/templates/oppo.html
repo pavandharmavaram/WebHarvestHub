@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+{% block content %}
+
+<h1 class="text-center text-success">oppo mobiles</h1>
+{% for i in oppo %}
+            <div class="container" align="center">
+            <div class="gallery">
+                <a target="_blank" href="{{i.2}}">Mobile Name:<b class="text-primary">{{i.0}}</b><br>
+                    <img src="{{i.1}}" alt="Cinque Terre" style="width: 350px; height: 430px;">
+                </a><br>
+                <p> offer:<b>{{i.3}}</p></i><br>
+               
+                </div>
+            </div>
+            {% endfor %} 
+            
+{% endblock content %}

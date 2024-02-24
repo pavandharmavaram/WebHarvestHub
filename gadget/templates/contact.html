@@ -1,0 +1,71 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            padding-left: 50%;
+        }
+        span{
+            color: blueviolet;
+        }
+        .fname{
+           height: 40px;
+           width: 250px;
+        }
+        .name{
+            padding-left: 420px;
+        }
+        .nam{
+            padding-top: 15px;
+            padding-left: 420px;
+        }
+        .msg{
+            padding-top: 15px;
+            padding-left: 420px;
+        }
+        .entermsg{
+            height: 300px;
+            width: 510px;
+        }
+        .send{
+            color:whitesmoke;
+            background: blue;
+            border-radius: 10%;
+            position: relative;
+            left: 50%;
+            top: 5%;
+        }
+        .btn{
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    {% extends "index.html" %}
+    {% block content %}
+<form method='POST'>{% csrf_token %}
+    <h1>Contact <span>Me</span></h1>
+    <div class="name">
+    <input type="text" placeholder="enter firstname" class="fname" name="firstname">  
+    <input type="text" placeholder="last firstname" class="fname" name="secondname"> 
+    </div>                                                                              
+    <div class="nam">
+    <input type="mail" placeholder="enter your mail" class="fname" name="email">
+    <input type="text" placeholder="enter your mobile number" class="fname" name="number">
+    </div>
+    <div class="msg">
+    <input type="text" placeholder="enter message" class="entermsg" name="text">
+    </div>
+        <div class="btn"> <button type="submit" value="send" class="send">send</button>
+        </div>
+
+</form> 
+{% endblock content %}
+</body>
+</html>

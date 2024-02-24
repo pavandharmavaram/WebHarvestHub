@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VENKAT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<STYLE>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    
+    }
+    .hero{
+        position: relative;
+        width: 100%;
+        
+       
+    }
+    .pf{
+        position: absolute;
+        top: 0px;
+        left: 40px;
+        font-size: 25px;
+        color:white;
+
+        display: flex;
+        height:35px;
+        margin: auto;
+        padding: 20px 0;
+        align-items: center;
+        justify-content: space-between;  
+        background:black;
+    }
+    .folio{
+        color: orange;
+    }
+    nav{
+        display: flex;
+        height:35px;
+        margin: auto;
+        padding: 20px 0;
+        align-items: center;
+        justify-content: space-between;  
+        background:black;
+        
+    }
+    .LOGO{
+        width: 300px;
+        height: 250px;
+    }
+    nav ul{
+        margin-left:450px;
+    }
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 10px 10px;
+        
+    } 
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin-left:20px;
+       
+    }
+    nav ul li a:hower{
+        color: red;
+    }
+    span{
+        color: orange;
+    }
+    .icon{
+        display: flex;
+        background:white;
+        position:relative;
+       
+    }
+    .fb{
+        position: relative;
+        top: 50px;
+        font-size: 30px; 
+        padding-left: 10px; 
+        padding-bottom: 20px; 
+         
+    }
+    .fb:hover{
+        font-size: 40px;
+        background-color:white;
+        color: darkblue;
+    }
+    .ln{
+        position: relative;
+        top: 50px;
+        font-size: 30px;
+        padding-left: 10px;
+        color:white;
+    }
+    .ln:hover{
+        font-size: 40px;
+        background-color: rgb(20, 47, 198);
+        color: white;
+    }
+    .ins{
+        position: relative;
+        top: 50px;
+        font-size: 30px;
+        padding-left: 10px;
+        color:pink;
+    }
+    .ins:hover{
+        font-size: 40px;
+    }
+    .git{
+        position: relative;
+        top: 50px;
+        font-size: 30px;
+        padding-left: 10px;
+    }
+    .git:hover{
+        font-size: 40px;
+        color: gray;
+    }
+    .tweet{
+        position: relative;
+        top: 50px;
+        font-size: 30px;
+        padding-left: 10px;
+    }
+    .tweet:hover{
+        font-size: 40px;
+        color: aqua;
+    }
+    
+    .icon  i{
+        position: relative;
+        top: 30%;
+        right: 10px;
+    }
+    .icon a {
+        margin-left:40px;
+    }
+    .icon div{
+        margin-left:140px;
+    }
+    .icon{
+        background:black;
+    }
+
+    .gadgets{
+        display:center;
+        height:445px;
+    }
+    .gadgets h1{
+        position:absolute;
+        top:200px;
+        left:280px;
+        font-size:50px;
+        
+    }
+</STYLE>
+<body>
+   
+    <div class="hero">
+        <nav class="navbar">
+            <h1 class="pf">WebHarvest<span class="folio">Hub</span></h1> 
+            <ul>
+                <li><a href="{% url 'bajaj' %}">BAJAJ</a></li>
+                <li><a href="{% url 'iphone' %}">iphones</a></li>
+                <li><a href="{% url 'oppo' %}">oppo</a></li>
+                <li><a href="{% url 'contact'%}">contact</a></li>
+              
+            </ul>
+        </nav>
+{% block content %}  
+        <div class="gadgets">
+            <h1>welcome to <span class="folio">WebHarvestHub</span></h1>
+        </div>
+{% endblock content %}
+   
+        <div class="icon">
+            <div>
+            <a href="https://www.facebook.com/venkat.venkatmitta"><i class="fa-brands fa-facebook fb"  id="fb"></i></a>
+            </div>
+            <div>
+            <a href="https://www.linkedin.com/in/venkat-sai-278908258/"><i class="fa-brands fa-linkedin ln"></i></a>
+            </div>
+            <div>
+             <a href="https://www.instagram.com/alwaysvenkat08/"></a><i class="fa-brands fa-square-instagram ins"></i></a>
+            </div>
+            <div>
+            <a href="https://github.com/Venkatsai777"><i class="fa-brands fa-github git"></i></a>
+            </div>
+            <div>
+            <a href="https://twitter.com/venkats59725019"><i class="fa-brands fa-twitter tweet"></i></a>
+           </div>
+        </div>
+    </div>
+
+</body>
+</html>

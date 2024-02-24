@@ -1,0 +1,18 @@
+{% extends "index.html" %}
+{% block content %}
+
+<h1 class="text-center text-success">iphones</h1>
+    {% for i in iph %}
+            <div class="container" align="center">
+            <div class="gallery">
+                <a target="_blank" href="{{i.1}}">mobile Name:<b class="text-primary">{{i.2}}</b><br>
+                    <img src="{{i.0}}" alt="Cinque Terre" >
+                </a><br>
+                <i> </b>about mobile:</b>{{i.3}}</i><br>
+               
+                </div>
+            </div>
+            {% endfor %} 
+            
+{% endblock content %}
+
